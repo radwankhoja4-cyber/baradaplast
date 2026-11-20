@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بردى بلاست للصناعات البلاستيكية | خراطيم زراعية وأنظمة ري - حلب</title>
+    <meta name="description" content="شركة بردى بلاست للصناعات البلاستيكية - حلب، المدينة الصناعية الشيخ نجار. متخصصون في صناعة الخراطيم الزراعية، خرطوم التيل، السواقي المقواة، وأنابيب الري بالتنقيط بأعلى معايير الجودة.">
+    
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0B2B4C',      // أزرق مائي صناعي داكن
+                            blue: '#0284C7',      // أزرق تدفق المياه
+                            lightBlue: '#E0F2FE', // أزرق فاتح للخلفيات
+                            green: '#15803D',     // أخضر زراعي داكن
+                            emerald: '#16A34A',   // أخضر زراعي حيوي
+                            lightGreen: '#DCFCE7',// أخضر فاتح
+                            slate: '#F8FAFC'      // رمادي فاتح نظيف
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-slate text-slate-800 font-sans antialiased selection:bg-brand-blue selection:text-white">
+
+    <!-- ==================== شريط التنقل العلوي (Navbar) ==================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- الشعار (SVG Logo + Brand Name) -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-navy to-brand-blue flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+                        <!-- شعار هندسي يمثل مقاطع الخراطيم وتدفق المياه -->
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="3.5" stroke-dasharray="70 24"/>
+                            <circle cx="20" cy="20" r="9" stroke="#4ADE80" stroke-width="3"/>
+                            <path d="M20 14C20 14 24.5 18.5 24.5 21.5C24.5 23.9853 22.4853 26 20 26C17.5147 26 15.5 23.9853 15.5 21.5C15.5 18.5 20 14 20 14Z" fill="#38BDF8"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl sm:text-2xl font-black text-brand-navy tracking-tight leading-none">بردى بلاست</span>
+                        <span class="text-xs font-bold text-brand-green mt-1">للصناعات البلاستيكية وأنظمة الري</span>
+                    </div>
+                </a>
+
+                <!-- روابط التنقل للحواسيب -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="text-slate-700 hover:text-brand-blue font-bold transition-colors">الرئيسية</a>
+                    <a href="#about" class="text-slate-700 hover:text-brand-blue font-bold transition-colors">من نحن</a>
+                    <a href="#products" class="text-slate-700 hover:text-brand-blue font-bold transition-colors">منتجاتنا</a>
+                    <a href="#features" class="text-slate-700 hover:text-brand-blue font-bold transition-colors">لماذا بردى بلاست؟</a>
+                    <a href="#contact" class="text-slate-700 hover:text-brand-blue font-bold transition-colors">تواصل معنا</a>
+                </nav>
+
+                <!-- زر واتساب سريع + زر قائمة الموبايل -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="hidden sm:inline-flex items-center gap-2 bg-brand-emerald hover:bg-brand-green text-white font-bold px-4 py-2.5 rounded-xl shadow-sm hover:shadow transition-all">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>تواصل مباشر</span>
+                    </a>
+
+                    <!-- زر القائمة للهواتف -->
+                    <button id="mobile-menu-btn" aria-label="فتح القائمة" class="md:hidden p-2.5 rounded-xl text-brand-navy hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- القائمة المنسدلة للهواتف -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="#home" class="mobile-link block px-4 py-3 rounded-xl font-bold text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy">الرئيسية</a>
+            <a href="#about" class="mobile-link block px-4 py-3 rounded-xl font-bold text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy">من نحن</a>
+            <a href="#products" class="mobile-link block px-4 py-3 rounded-xl font-bold text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy">منتجاتنا</a>
+            <a href="#features" class="mobile-link block px-4 py-3 rounded-xl font-bold text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy">لماذا بردى بلاست؟</a>
+            <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl font-bold text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy">تواصل معنا</a>
+            <div class="pt-2">
+                <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 w-full bg-brand-emerald text-white font-bold py-3 rounded-xl shadow">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>راسلنا على واتساب</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== قسم الواجهة الرئيسية (Hero Section) ==================== -->
+    <section id="home" class="relative overflow-hidden bg-gradient-to-bl from-brand-navy via-[#0F3A63] to-[#082038] text-white py-20 lg:py-28">
+        <!-- خلفيات هندسية زخرفية -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+            </svg>
+        </div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-blue/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-12 -right-24 w-80 h-80 bg-brand-emerald/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- النص الرئيسي -->
+                <div class="lg:col-span-7 text-center lg:text-right space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-sky-200">
+                        <i class="fa-solid fa-industry text-emerald-400"></i>
+                        <span>حلب - المدينة الصناعية الشيخ نجار (توسع الفئة الأولى)</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight">
+                        قوة التدفق وجودة الصناعة في <span class="text-transparent bg-clip-text bg-gradient-to-l from-emerald-400 to-sky-300">الخراطيم الزراعية وأنظمة الري</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        في <strong>شركة بردى بلاست للصناعات البلاستيكية</strong>، نصنع حلول نقل المياه والري الزراعي والمنزلي وفق أعلى معايير المتانة والمرونة، باستخدام أجود الخامات المقاومة للضغط والعوامل الجوية.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#products" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-emerald hover:bg-emerald-500 text-white font-extrabold px-8 py-4 rounded-2xl shadow-lg shadow-emerald-900/30 transition-all transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>تصفح كتالوج المنتجات</span>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-bold px-8 py-4 rounded-2xl backdrop-blur-sm transition-all">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>تواصل مع فريق المبيعات</span>
+                        </a>
+                    </div>
+
+                    <!-- إحصائيات سريعة -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/15 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-emerald-400">+6</div>
+                            <div class="text-xs sm:text-sm text-slate-300 font-medium">خطوط إنتاج متخصصة</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-sky-300">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-300 font-medium">خامات بكر عالية الجودة</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-white">كافة</div>
+                            <div class="text-xs sm:text-sm text-slate-300 font-medium">المقاسات الزراعية والمنزلية</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة بصرية هندسية للمنتجات -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-5">
+                        <div class="flex items-center justify-between border-b border-white/15 pb-4">
+                            <div class="flex items-center gap-3">
+                                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+                                <h2 class="font-bold text-lg">تشكيلة منتجاتنا الأساسية</h2>
+                            </div>
+                            <span class="text-xs bg-sky-500/20 text-sky-200 px-3 py-1 rounded-full font-bold">إنتاج وطني متطور</span>
+                        </div>
+
+                        <ul class="space-y-3">
+                            <li class="flex items-center justify-between bg-white/5 hover:bg-white/10 p-3.5 rounded-2xl transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-300 flex items-center justify-center">
+                                        <i class="fa-solid fa-ring"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-sm sm:text-base">خرطوم تيل مقوى</div>
+                                        <div class="text-xs text-slate-300">من 1 إنش حتى 5 إنش</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-left text-slate-400 text-xs"></i>
+                            </li>
+
+                            <li class="flex items-center justify-between bg-white/5 hover:bg-white/10 p-3.5 rounded-2xl transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center">
+                                        <i class="fa-solid fa-droplet"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-sm sm:text-base">ري بالتنقيط (G.R)</div>
+                                        <div class="text-xs text-slate-300">مسافات 20 / 33 / 40 سم</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-left text-slate-400 text-xs"></i>
+                            </li>
+
+                            <li class="flex items-center justify-between bg-white/5 hover:bg-white/10 p-3.5 rounded-2xl transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center">
+                                        <i class="fa-solid fa-water"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-sm sm:text-base">سواقي مقواة بالخيط ونوع أول</div>
+                                        <div class="text-xs text-slate-300">عروض تبدأ من 8 سم حتى 60 سم</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-left text-slate-400 text-xs"></i>
+                            </li>
+
+                            <li class="flex items-center justify-between bg-white/5 hover:bg-white/10 p-3.5 rounded-2xl transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-300 flex items-center justify-center">
+                                        <i class="fa-solid fa-seedling"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-sm sm:text-base">خراطيم زراعية ومنزلية PVC</div>
+                                        <div class="text-xs text-slate-300">قياسات بالملم والإنش لكافة الاستخدامات</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-left text-slate-400 text-xs"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== قسم من نحن والمميزات ==================== -->
+    <section id="about" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- تفاصيل الشركة -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-lightGreen text-brand-green px-4 py-1.5 rounded-full text-sm font-bold">
+                        <i class="fa-solid fa-award"></i>
+                        <span>عن شركة بردى بلاست</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-black text-brand-navy leading-snug">
+                        خبرة صناعية رائدة في قلب <span class="text-brand-blue">المدينة الصناعية الشيخ نجار</span> بحلب
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+                        تُعد <strong>شركة بردى بلاست للصناعات البلاستيكية</strong> واحدة من المنشآت الصناعية المتخصصة في تصنيع وتطوير الخراطيم الزراعية، أنابيب الري بالتنقيط، السواقي المسطحة، وخراطيم الـ PVC المنزلية.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-base">
+                        نلتزم في منشأتنا الكائنة في <strong>حلب - المدينة الصناعية الشيخ نجار (توسع الفئة الأولى)</strong> بتطبيق رقابة صارمة على الجودة، بدءاً من اختيار حبيبات البولي إيثيلين والـ PVC النقية وصولاً إلى اختبار تحمل الضغط والمرونة، لنضمن للمزارع والتاجر منتجاً يدوم طويلاً تحت أقسى الظروف المناخية.
+                    </p>
+
+                    <div class="bg-brand-slate border border-slate-200 rounded-2xl p-5 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-navy text-white flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-location-dot text-xl text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-brand-navy text-base">موقع المصنع والإدارة</h3>
+                            <p class="text-slate-600 text-sm mt-1">الجمهورية العربية السورية - حلب - المدينة الصناعية الشيخ نجار - توسع الفئة الأولى.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقات المميزات الأربعة -->
+                <div id="features" class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="bg-brand-slate hover:bg-white border border-slate-200/80 hover:border-brand-blue/40 p-6 rounded-3xl shadow-sm hover:shadow-md transition-all">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-lightBlue text-brand-blue flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-gem text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-brand-navy mb-2">خامات أولى نقية</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">نستخدم أجود أنواع البولي إيثيلين والـ PVC لضمان مرونة عالية وعدم التشقق أو التكسر مع مرور الوقت.</p>
+                    </div>
+
+                    <div class="bg-brand-slate hover:bg-white border border-slate-200/80 hover:border-brand-emerald/40 p-6 rounded-3xl shadow-sm hover:shadow-md transition-all">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-lightGreen text-brand-green flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-sun text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-brand-navy mb-2">مقاومة الشمس والضغط</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">معالجة بمثبتات الأشعة فوق البنفسجية (UV) وتدعيم بالخيوط لتحمل ضغوط الضخ العالية والحرارة.</p>
+                    </div>
+
+                    <div class="bg-brand-slate hover:bg-white border border-slate-200/80 hover:border-brand-blue/40 p-6 rounded-3xl shadow-sm hover:shadow-md transition-all">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-lightBlue text-brand-blue flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-ruler-combined text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-brand-navy mb-2">دقة المقاسات والتدفق</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">أقطار وسماكات دقيقة ومطابقة للمواصفات القياسية لضمان توافق تام مع كافة الوصلات والمضخات.</p>
+                    </div>
+
+                    <div class="bg-brand-slate hover:bg-white border border-slate-200/80 hover:border-brand-emerald/40 p-6 rounded-3xl shadow-sm hover:shadow-md transition-all">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-lightGreen text-brand-green flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-truck-fast text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-brand-navy mb-2">جاهزية وتوريد سريع</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">طاقة إنتاجية عالية تلبي طلبات المشاريع الزراعية وتجار الجملة في حلب وكافة المحافظات.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== قسم المنتجات (Products Catalog) ==================== -->
+    <section id="products" class="py-16 lg:py-24 bg-brand-slate border-t border-slate-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- عنوان القسم -->
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-10">
+                <span class="inline-block bg-brand-lightBlue text-brand-blue font-extrabold text-sm px-4 py-1.5 rounded-full">كتالوج المنتجات والمقاسات</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-navy">منتجات بردى بلاست القياسية</h2>
+                <p class="text-slate-600 text-base sm:text-lg">اختر الفئة المناسبة لاستعراض المقاسات المتوفرة بدقة، أو اطلب عرض سعر مباشر عبر واتساب لأي منتج.</p>
+            </div>
+
+            <!-- أزرار التصفية التفاعلية (Filter Tabs) -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12" id="filter-buttons">
+                <button data-filter="all" class="filter-btn active bg-brand-navy text-white font-bold px-5 py-2.5 rounded-xl shadow-sm transition-all cursor-pointer">
+                    جميع المنتجات (6)
+                </button>
+                <button data-filter="agricultural" class="filter-btn bg-white text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy border border-slate-200 font-bold px-5 py-2.5 rounded-xl transition-all cursor-pointer">
+                    خراطيم زراعية وتيل
+                </button>
+                <button data-filter="irrigation" class="filter-btn bg-white text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy border border-slate-200 font-bold px-5 py-2.5 rounded-xl transition-all cursor-pointer">
+                    ري بالتنقيط وسواقي
+                </button>
+                <button data-filter="domestic" class="filter-btn bg-white text-slate-700 hover:bg-brand-lightBlue hover:text-brand-navy border border-slate-200 font-bold px-5 py-2.5 rounded-xl transition-all cursor-pointer">
+                    خراطيم منزلية PVC
+                </button>
+            </div>
+
+            <!-- شبكة بطاقات المنتجات -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7" id="products-grid">
+
+                <!-- 1. خرطوم تيل -->
+                <article data-category="agricultural" class="product-card bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div>
+                        <!-- رأس البطاقة الملون -->
+                        <div class="bg-gradient-to-l from-brand-navy to-brand-blue p-6 text-white relative overflow-hidden">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">ضغط عالي ومقوى</span>
+                                <i class="fa-solid fa-ring text-2xl text-sky-200"></i>
+                            </div>
+                            <h3 class="text-2xl font-black mt-3">1. خرطوم تيل</h3>
+                            <p class="text-sky-100 text-xs mt-1">خرطوم مجدول ومقوى بخيوط التيل لتحمل الضغوط العالية والضخ المستمر.</p>
+                        </div>
+
+                        <!-- تفاصيل المقاسات -->
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-extrabold text-brand-navy flex items-center gap-1.5">
+                                    <i class="fa-solid fa-ruler text-brand-blue"></i>
+                                    المقاسات المتوفرة (بالإنش):
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">10 مقاسات</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">1 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">1.25 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">1.5 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">1.75 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">2 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">2.25 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">2.5 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">3 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">4 إنش</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">5 إنش</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- زر الطلب -->
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%85%D9%86%D8%AA%D8%AC%3A%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20%D8%AA%D9%8A%D9%84" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-slate hover:bg-brand-emerald text-brand-navy hover:text-white border border-slate-200 hover:border-brand-emerald font-bold py-3 px-4 rounded-xl transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>استفسار / طلب عرض سعر</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. خرطوم PVC منزلي -->
+                <article data-category="domestic" class="product-card bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div>
+                        <div class="bg-gradient-to-l from-sky-700 to-cyan-600 p-6 text-white relative overflow-hidden">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">مرونة عالية</span>
+                                <i class="fa-solid fa-house-water text-2xl text-cyan-100"></i>
+                            </div>
+                            <h3 class="text-2xl font-black mt-3">2. خرطوم PVC منزلي</h3>
+                            <p class="text-cyan-50 text-xs mt-1">خراطيم منزلية عالية المرونة ومقاومة للالتواء للاستخدامات المنزلية والحدائق.</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-extrabold text-brand-navy flex items-center gap-1.5">
+                                    <i class="fa-solid fa-ruler text-cyan-600"></i>
+                                    المقاسات المتوفرة (بالإنش):
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">6 مقاسات</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3.5 py-2 rounded-lg bg-cyan-50 text-cyan-900 font-bold text-sm border border-cyan-200">1/2 إنش (نصف)</span>
+                                <span class="px-3.5 py-2 rounded-lg bg-cyan-50 text-cyan-900 font-bold text-sm border border-cyan-200">3/4 إنش (ثلاثة أرباع)</span>
+                                <span class="px-3.5 py-2 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">1 إنش</span>
+                                <span class="px-3.5 py-2 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">1.25 إنش</span>
+                                <span class="px-3.5 py-2 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">1.5 إنش</span>
+                                <span class="px-3.5 py-2 rounded-lg bg-slate-100 text-brand-navy font-bold text-sm border border-slate-200">2 إنش</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%85%D9%86%D8%AA%D8%AC%3A%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20PVC%20%D9%85%D9%86%D8%B2%D9%84%D9%8A" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-slate hover:bg-brand-emerald text-brand-navy hover:text-white border border-slate-200 hover:border-brand-emerald font-bold py-3 px-4 rounded-xl transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>استفسار / طلب عرض سعر</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. ري بالتنقيط G.R -->
+                <article data-category="irrigation" class="product-card bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div>
+                        <div class="bg-gradient-to-l from-brand-green to-brand-emerald p-6 text-white relative overflow-hidden">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">توفير المياه</span>
+                                <i class="fa-solid fa-droplet text-2xl text-emerald-100"></i>
+                            </div>
+                            <h3 class="text-2xl font-black mt-3">3. ري بالتنقيط (G.R)</h3>
+                            <p class="text-emerald-50 text-xs mt-1">أنابيب تنقيط ذاتية التنظيم بتوزيع مائي منتظم ودقيق لكافة المحاصيل.</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-extrabold text-brand-navy flex items-center gap-1.5">
+                                    <i class="fa-solid fa-sliders text-brand-green"></i>
+                                    المسافات والتصاريف المتوفرة:
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">5 مواصفات</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-emerald-50/80 border border-emerald-200/80 text-sm font-bold text-brand-navy">
+                                    <span>مسافة النقاط: <strong>20 سم</strong></span>
+                                    <span class="bg-brand-green text-white text-xs px-2.5 py-0.5 rounded-md">8 لتر / ساعة</span>
+                                </div>
+                                <div class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm font-bold text-brand-navy">
+                                    <span>مسافة النقاط: <strong>33 سم</strong></span>
+                                    <span class="bg-brand-navy text-white text-xs px-2.5 py-0.5 rounded-md">8 لتر / ساعة</span>
+                                </div>
+                                <div class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm font-bold text-brand-navy">
+                                    <span>مسافة النقاط: <strong>33 سم</strong></span>
+                                    <span class="bg-brand-blue text-white text-xs px-2.5 py-0.5 rounded-md">4 لتر / ساعة</span>
+                                </div>
+                                <div class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm font-bold text-brand-navy">
+                                    <span>مسافة النقاط: <strong>40 سم</strong></span>
+                                    <span class="bg-brand-navy text-white text-xs px-2.5 py-0.5 rounded-md">8 لتر / ساعة</span>
+                                </div>
+                                <div class="flex items-center justify-between px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm font-bold text-brand-navy">
+                                    <span>مسافة النقاط: <strong>40 سم</strong></span>
+                                    <span class="bg-brand-blue text-white text-xs px-2.5 py-0.5 rounded-md">4 لتر / ساعة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%85%D9%86%D8%AA%D8%AC%3A%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20%D8%B1%D9%8A%20%D8%A8%D8%A7%D9%84%D8%AA%D9%86%D9%82%D9%8A%D8%B7%20G.R" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-slate hover:bg-brand-emerald text-brand-navy hover:text-white border border-slate-200 hover:border-brand-emerald font-bold py-3 px-4 rounded-xl transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>استفسار / طلب عرض سعر</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. سواقي مقوى بالخيط -->
+                <article data-category="irrigation" class="product-card bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div>
+                        <div class="bg-gradient-to-l from-slate-800 to-brand-navy p-6 text-white relative overflow-hidden">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-amber-400/20 text-amber-300 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">مدعم بخيوط</span>
+                                <i class="fa-solid fa-water text-2xl text-sky-300"></i>
+                            </div>
+                            <h3 class="text-2xl font-black mt-3">4. سواقي مقوى بالخيط</h3>
+                            <p class="text-slate-200 text-xs mt-1">سواقي زراعية مسطحة مدعمة بشبكة خيوط متينة لمقاومة الشد وضغط المياه.</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-extrabold text-brand-navy flex items-center gap-1.5">
+                                    <i class="fa-solid fa-arrows-left-right text-brand-blue"></i>
+                                    العروض المتوفرة (بالسنتيمتر):
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">6 مقاسات</span>
+                            </div>
+                            <div class="grid grid-cols-3 gap-2.5">
+                                <div class="text-center py-2.5 rounded-xl bg-slate-100 text-brand-navy font-extrabold text-sm border border-slate-200">عرض 8 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-slate-100 text-brand-navy font-extrabold text-sm border border-slate-200">عرض 10 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-slate-100 text-brand-navy font-extrabold text-sm border border-slate-200">عرض 15 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-slate-100 text-brand-navy font-extrabold text-sm border border-slate-200">عرض 20 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-slate-100 text-brand-navy font-extrabold text-sm border border-slate-200">عرض 25 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-slate-100 text-brand-navy font-extrabold text-sm border border-slate-200">عرض 30 سم</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%85%D9%86%D8%AA%D8%AC%3A%20%D8%B3%D9%88%D8%A7%D9%82%D9%8A%20%D9%85%D9%82%D9%88%D9%89%20%D8%A8%D8%A7%D9%84%D8%AE%D9%8A%D8%B7" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-slate hover:bg-brand-emerald text-brand-navy hover:text-white border border-slate-200 hover:border-brand-emerald font-bold py-3 px-4 rounded-xl transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>استفسار / طلب عرض سعر</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. سواقي نوع أول -->
+                <article data-category="irrigation" class="product-card bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div>
+                        <div class="bg-gradient-to-l from-teal-800 to-emerald-700 p-6 text-white relative overflow-hidden">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">خامة بكر نخب أول</span>
+                                <i class="fa-solid fa-layer-group text-2xl text-teal-100"></i>
+                            </div>
+                            <h3 class="text-2xl font-black mt-3">5. سواقي نوع أول</h3>
+                            <p class="text-teal-50 text-xs mt-1">سواقي ري مسطحة مصنعة من أجود الخامات الصافية بتشكيلة عروض واسعة.</p>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-extrabold text-brand-navy flex items-center gap-1.5">
+                                    <i class="fa-solid fa-arrows-left-right text-teal-600"></i>
+                                    العروض المتوفرة (بالسنتيمتر):
+                                </span>
+                                <span class="text-xs font-bold text-slate-400">8 مقاسات</span>
+                            </div>
+                            <div class="grid grid-cols-4 gap-2">
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">10 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">15 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">20 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">25 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">30 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">40 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">50 سم</div>
+                                <div class="text-center py-2.5 rounded-xl bg-teal-50/70 text-brand-navy font-extrabold text-sm border border-teal-200/80">60 سم</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%85%D9%86%D8%AA%D8%AC%3A%20%D8%B3%D9%88%D8%A7%D9%82%D9%8A%20%D9%86%D9%88%D8%B9%20%D8%A3%D9%88%D9%84" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-slate hover:bg-brand-emerald text-brand-navy hover:text-white border border-slate-200 hover:border-brand-emerald font-bold py-3 px-4 rounded-xl transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>استفسار / طلب عرض سعر</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 6. خرطوم زراعي -->
+                <article data-category="agricultural" class="product-card bg-white rounded-3xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div>
+                        <div class="bg-gradient-to-l from-brand-navy via-blue-800 to-emerald-800 p-6 text-white relative overflow-hidden">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-white/20 backdrop-blur-sm text-xs font-bold px-3 py-1 rounded-full">ملم + إنش</span>
+                                <i class="fa-solid fa-seedling text-2xl text-emerald-300"></i>
+                            </div>
+                            <h3 class="text-2xl font-black mt-3">6. خرطوم زراعي</h3>
+                            <p class="text-sky-100 text-xs mt-1">خراطيم البولي إيثيلين الزراعية لشبكات الري الرئيسية والفرعية بالملم والإنش.</p>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <!-- بالملم -->
+                            <div>
+                                <div class="text-xs font-extrabold text-brand-blue mb-2 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-dot"></i>
+                                    <span>مقاسات بالمليمتر (مم):</span>
+                                </div>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">20 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">25 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">32 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">40 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">50 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">63 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">75 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">90 مم</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightBlue/60 text-brand-navy font-bold text-xs border border-sky-200">110 مم</span>
+                                </div>
+                            </div>
+
+                            <!-- بالإنش -->
+                            <div class="pt-2 border-t border-slate-100">
+                                <div class="text-xs font-extrabold text-brand-green mb-2 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-dot"></i>
+                                    <span>مقاسات بالإنش:</span>
+                                </div>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightGreen/70 text-brand-navy font-bold text-xs border border-emerald-200">1 إنش</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightGreen/70 text-brand-navy font-bold text-xs border border-emerald-200">1.25 إنش</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightGreen/70 text-brand-navy font-bold text-xs border border-emerald-200">1.5 إنش</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightGreen/70 text-brand-navy font-bold text-xs border border-emerald-200">2 إنش</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightGreen/70 text-brand-navy font-bold text-xs border border-emerald-200">3 إنش</span>
+                                    <span class="px-2.5 py-1 rounded-lg bg-brand-lightGreen/70 text-brand-navy font-bold text-xs border border-emerald-200">4 إنش</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1%20%D9%84%D9%85%D9%86%D8%AA%D8%AC%3A%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20%D8%B2%D8%B1%D8%A7%D8%B9%D9%8A" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="w-full inline-flex items-center justify-center gap-2 bg-brand-slate hover:bg-brand-emerald text-brand-navy hover:text-white border border-slate-200 hover:border-brand-emerald font-bold py-3 px-4 rounded-xl transition-all">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>استفسار / طلب عرض سعر</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== قسم التواصل والموقع الجغرافي (Contact Section) ==================== -->
+    <section id="contact" class="py-16 lg:py-24 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
+                <span class="inline-block bg-brand-lightGreen text-brand-green font-extrabold text-sm px-4 py-1.5 rounded-full">خدمة العملاء والمبيعات</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-brand-navy">تواصل مباشرة مع إدارة ومبيعات بردى بلاست</h2>
+                <p class="text-slate-600 text-base sm:text-lg">فريقنا جاهز لاستقبال طلبات الجملة والمشاريع الزراعية وتقديم الاستشارات الفنية وتزويدكم بقوائم الأسعار المحدثة.</p>
+            </div>
+
+            <!-- بطاقات مسؤولي التواصل الأربعة -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                
+                <!-- 1. ياسر خوجه -->
+                <div class="bg-brand-slate border border-slate-200 hover:border-brand-blue/50 rounded-3xl p-6 text-center shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-brand-navy to-brand-blue text-white flex items-center justify-center text-2xl font-black shadow-md mb-4">
+                            ي
+                        </div>
+                        <h3 class="text-xl font-black text-brand-navy">ياسر خوجه</h3>
+                        <p class="text-xs font-bold text-slate-500 mt-1">الإدارة والمبيعات</p>
+                        <div dir="ltr" class="mt-4 py-2 px-3 bg-white rounded-xl border border-slate-200 font-extrabold text-brand-navy text-lg tracking-wider">
+                            0943 217 554
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2.5 mt-5">
+                        <a href="tel:+963943217554" class="flex items-center justify-center gap-1.5 bg-brand-navy hover:bg-slate-800 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>اتصال</span>
+                        </a>
+                        <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%8A%D8%A7%D8%B3%D8%B1%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-1.5 bg-brand-emerald hover:bg-brand-green text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>واتساب</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. فادي خوجه -->
+                <div class="bg-brand-slate border border-slate-200 hover:border-brand-blue/50 rounded-3xl p-6 text-center shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-brand-navy to-brand-blue text-white flex items-center justify-center text-2xl font-black shadow-md mb-4">
+                            ف
+                        </div>
+                        <h3 class="text-xl font-black text-brand-navy">فادي خوجه</h3>
+                        <p class="text-xs font-bold text-slate-500 mt-1">الإدارة والمبيعات</p>
+                        <div dir="ltr" class="mt-4 py-2 px-3 bg-white rounded-xl border border-slate-200 font-extrabold text-brand-navy text-lg tracking-wider">
+                            0932 870 526
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2.5 mt-5">
+                        <a href="tel:+963932870526" class="flex items-center justify-center gap-1.5 bg-brand-navy hover:bg-slate-800 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>اتصال</span>
+                        </a>
+                        <a href="https://wa.me/963932870526?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D9%81%D8%A7%D8%AF%D9%8A%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-1.5 bg-brand-emerald hover:bg-brand-green text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>واتساب</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. شادي خوجه -->
+                <div class="bg-brand-slate border border-slate-200 hover:border-brand-blue/50 rounded-3xl p-6 text-center shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-brand-navy to-brand-blue text-white flex items-center justify-center text-2xl font-black shadow-md mb-4">
+                            ش
+                        </div>
+                        <h3 class="text-xl font-black text-brand-navy">شادي خوجه</h3>
+                        <p class="text-xs font-bold text-slate-500 mt-1">الإدارة والمبيعات</p>
+                        <div dir="ltr" class="mt-4 py-2 px-3 bg-white rounded-xl border border-slate-200 font-extrabold text-brand-navy text-lg tracking-wider">
+                            0988 851 230
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2.5 mt-5">
+                        <a href="tel:+963988851230" class="flex items-center justify-center gap-1.5 bg-brand-navy hover:bg-slate-800 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>اتصال</span>
+                        </a>
+                        <a href="https://wa.me/963988851230?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%B4%D8%A7%D8%AF%D9%8A%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-1.5 bg-brand-emerald hover:bg-brand-green text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>واتساب</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. أحمد خوجه -->
+                <div class="bg-brand-slate border border-slate-200 hover:border-brand-blue/50 rounded-3xl p-6 text-center shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-brand-navy to-brand-blue text-white flex items-center justify-center text-2xl font-black shadow-md mb-4">
+                            أ
+                        </div>
+                        <h3 class="text-xl font-black text-brand-navy">أحمد خوجه</h3>
+                        <p class="text-xs font-bold text-slate-500 mt-1">الإدارة والمبيعات</p>
+                        <div dir="ltr" class="mt-4 py-2 px-3 bg-white rounded-xl border border-slate-200 font-extrabold text-brand-navy text-lg tracking-wider">
+                            0944 217 554
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2.5 mt-5">
+                        <a href="tel:+963944217554" class="flex items-center justify-center gap-1.5 bg-brand-navy hover:bg-slate-800 text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>اتصال</span>
+                        </a>
+                        <a href="https://wa.me/963944217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%A3%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA" 
+                           target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-1.5 bg-brand-emerald hover:bg-brand-green text-white font-bold py-2.5 px-3 rounded-xl text-sm transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>واتساب</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- شريط الموقع الجغرافي في الشيخ نجار -->
+            <div class="bg-gradient-to-l from-brand-navy to-[#123D6A] rounded-3xl p-6 sm:p-10 text-white flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xl">
+                <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-right gap-5">
+                    <div class="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-map-location-dot text-3xl text-emerald-400"></i>
+                    </div>
+                    <div class="space-y-1.5">
+                        <span class="text-xs font-bold text-sky-300 uppercase tracking-wider">العنوان الصناعي الرسمي</span>
+                        <h3 class="text-xl sm:text-2xl font-black">الجمهورية العربية السورية - حلب - المدينة الصناعية الشيخ نجار</h3>
+                        <p class="text-slate-200 font-semibold text-sm sm:text-base">توسع الفئة الأولى - مصنع بردى بلاست للصناعات البلاستيكية</p>
+                    </div>
+                </div>
+                <div class="shrink-0 w-full sm:w-auto">
+                    <a href="https://maps.google.com/?q=Sheikh+Najjar+Industrial+City+Aleppo" target="_blank" rel="noopener noreferrer" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-brand-navy hover:bg-sky-50 font-extrabold px-6 py-3.5 rounded-2xl shadow transition-all">
+                        <i class="fa-solid fa-diamond-turn-right text-brand-blue text-lg"></i>
+                        <span>فتح الموقع على الخريطة</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== تذييل الصفحة (Footer) ==================== -->
+    <footer class="bg-[#071B30] text-slate-300 pt-14 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+                
+                <!-- نبذة -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-blue flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="3.5" stroke-dasharray="70 24"/>
+                                <circle cx="20" cy="20" r="9" stroke="#4ADE80" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-black text-white">بردى بلاست</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        رائدون في تصنيع الخراطيم الزراعية، خراطيم التيل، السواقي المقواة، وأنابيب الري بالتنقيط بأعلى معايير الجودة والمتانة في حلب وسوريا.
+                    </p>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div>
+                    <h4 class="text-white font-extrabold text-base mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#home" class="hover:text-emerald-400 transition-colors">الرئيسية</a></li>
+                        <li><a href="#about" class="hover:text-emerald-400 transition-colors">عن الشركة</a></li>
+                        <li><a href="#products" class="hover:text-emerald-400 transition-colors">كتالوج المنتجات والمقاسات</a></li>
+                        <li><a href="#contact" class="hover:text-emerald-400 transition-colors">أرقام المبيعات والتواصل</a></li>
+                    </ul>
+                </div>
+
+                <!-- المنتجات الرئيسية -->
+                <div>
+                    <h4 class="text-white font-extrabold text-base mb-4">منتجاتنا</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>• خرطوم تيل (1 إلى 5 إنش)</li>
+                        <li>• خرطوم PVC منزلي (1/2 إلى 2 إنش)</li>
+                        <li>• خراطيم ري بالتنقيط G.R</li>
+                        <li>• سواقي مقواة بالخيط ونوع أول</li>
+                        <li>• خراطيم زراعية (ملم وإنش)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>© <span id="year"></span> شركة بردى بلاست للصناعات البلاستيكية. جميع الحقوق محفوظة.</p>
+                <p>حلب - المدينة الصناعية الشيخ نجار - توسع الفئة الأولى</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر واتساب عائم أسفل الشاشة -->
+    <a href="https://wa.me/963943217554?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A8%D8%B1%D8%AF%D9%89%20%D8%A8%D9%84%D8%A7%D8%B3%D8%AA" 
+       target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب"
+       class="fixed bottom-5 left-5 z-40 w-14 h-14 bg-brand-emerald hover:bg-brand-green text-white rounded-full shadow-lg shadow-emerald-900/30 flex items-center justify-center text-3xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ==================== السكربت التفاعلي ==================== -->
+    <script>
+        // تحديث السنة تلقائياً في الفوتر
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // التحكم بقائمة الموبايل
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // تصفية المنتجات التفاعلية (Filter Tabs)
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // إزالة الحالة النشطة من جميع الأزرار
+                filterButtons.forEach(b => {
+                    b.classList.remove('active', 'bg-brand-navy', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                });
+
+                // تفعيل الزر المختار
+                btn.classList.add('active', 'bg-brand-navy', 'text-white', 'shadow-sm');
+                btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+
+                const selectedCategory = btn.getAttribute('data-filter');
+
+                productCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
